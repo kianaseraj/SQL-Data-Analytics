@@ -1,10 +1,10 @@
-/* Crating database and shemas
+/* Crating database and schemas
 Purpose: 
 The script creates new database named 'DataWarehouse' with a schema, called 'gold'.
 */
 
 
--- Create 'DataWarehouseAnaalytics' database
+-- Create 'DataWarehouseAnalytics' database
 CREATE DATABASE DataWarehouseAnalytics;
 
 -- Create schemas
@@ -23,6 +23,7 @@ CREATE TABLE gold.dim_customers(
     birthdate date,
     create_date date
 );
+
 -- Create a table named fact_sales
 CREATE TABLE gold.fact_sales(
 	order_number nvarchar(50),
