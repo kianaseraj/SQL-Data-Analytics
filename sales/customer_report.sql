@@ -3,7 +3,7 @@
 Customer Report
 ===============================================================================
 Purpose:
-    - This report consolidates key customer metrics and behaviors
+    - This report consolidates key customer metrics and behaviors calccculated in analytics.sql file.
 
 Highlights:
     1. Gathers essential fields such as names, ages, and transaction details.
@@ -24,6 +24,7 @@ Highlights:
 -- =============================================================================
 -- Create Report: gold.report_customers
 -- =============================================================================
+
 CREATE VIEW gold.report_customers AS
 WITH base_query AS (
 /* 1) Base Query: Retrieves core columns from tables */
@@ -82,7 +83,7 @@ CASE
     ELSE 'New'
 END AS customer_segment,
 last_order_date,
-TIMESTAMPDIFF(MONTH, last_order_date, CURDATE()) AS rercency,
+TIMESTAMPDIFF(MONTH, last_order_date, (SELECT MAX(order_date) FROM gold.fact_sales)) AS rercency,
 total_orders,
 total_sales,
 total_quantity,
@@ -97,3 +98,7 @@ CASE WHEN lifespan = 0 THEN total_sales
      ELSE total_sales / lifespan
 END AS avg_monthly_spend
 FROM customer_aggregation
+
+
+
+

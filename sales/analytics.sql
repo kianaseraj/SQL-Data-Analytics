@@ -92,7 +92,7 @@ FROM yearly_product_sales
 ORDER BY product_name, oder_year;
 
 /*
-part to whole analysis; how one category contributes to the others, one dim and one measure is needed
+part to whole analysis; how one category contributes to the others.
 */
 
 -- Which categories contributes to the overal sales the most
@@ -114,7 +114,7 @@ ORDER BY total_sales DESC;
 
 
 /*
-Data segmentation; group data based on a specific range, 2 measure are needed
+Data segmentation; group data based on a specific range.
 */
 
 -- Segment products into cost ranges and count how many products fall into each segment
@@ -170,6 +170,8 @@ FROM(
 	FROM customer_spending)t
 GROUP BY customer_segment
 ORDER BY total_customers DESC 
+
+
 
 
 
