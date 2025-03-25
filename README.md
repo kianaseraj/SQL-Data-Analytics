@@ -1,3 +1,3 @@
-📊 **SQL Data Analytics Report**
+📊 **SQL Data Analytics**
 
-📌 **Overview** This project contains SQL queries for Exploratory Data Analysis (EDA), advanced analytics, and reporting.
+📌 **Overview** This repository contains SQL queries for Exploratory Data Analysis (EDA), advanced analytics, and reporting.
