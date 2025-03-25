@@ -217,6 +217,22 @@ SET category =
         ELSE 'Unknown' -- Optional: Handles unexpected cases
     END;
 
+
+-- Finding discounts or extra charges customers may have
+
+ALTER TABLE churn_data ADD COLUMN charge_diff VARCHAR(30);
+select * from churn_data;
+UPDATE churn_data
+SET charge_diff =
+	CASE
+		WHEN tenure * MonthlyCharges - TotalCharges > 0 THEN 
+			CONCAT('$',FORMAT(ABS(tenure * MonthlyCharges - TotalCharges),2), ' Extra charge')
+		WHEN tenure * MonthlyCharges - TotalCharges = 0 THEN
+			'No extra charge'
+        WHEN tenure * MonthlyCharges - TotalCharges < 0 THEN
+			CONCAT('$',FORMAT(ABS(tenure * MonthlyCharges - TotalCharges),2), ' Discount')
+	END;
+
 -- finding out how many of vip customers had churn and how many of the new customers had churn
 SELECT 
     category,
