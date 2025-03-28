@@ -1,14 +1,42 @@
-📊 Sales Analysis Using MySQL
+# 📊 Sales Analysis Using MySQL
 
-📝 Overview
+### Overview
+
 This project explores and analyzes a sales dataset using SQL, focusing on key performance indicators (KPIs), customer behavior, product trends, and temporal patterns. The aim is to demonstrate the power of structured queries for business insight extraction and to practice a wide range of analytical techniques in SQL.
-
 The analysis touches upon various areas including trend analysis, segmentation, comparative performance, ranking, and part-to-whole contributions — mimicking what real-world data analysts do for business dashboards and reporting.
 
-[Tableau Dahboard](https://public.tableau.com/app/profile/kianaseraj/viz/first_dashboard_17419718005270/SalesDashboard)
+### Interactive Tableau Dashboard
 
+Explore the interactive Tableau dashboard built on top of SQL views and queries designed in this project:
 
-🗃️ Dataset Structure
+👉 [View Live Dashboard](https://public.tableau.com/app/profile/kianaseraj/viz/first_dashboard_17419718005270/SalesDashboard)
+
+The Dashboard includes :
+
+Sales Overview
+
+Total Sales, Profit, and Quantity for 2023
+
+% change vs previous year (2022)
+
+Highlighted Max/Min months for each KPI
+
+Sales & Profit by Subcategory
+
+Horizontal bar chart comparing 2023 vs 2022 sales
+
+Color-coded profit vs loss for each subcategory
+
+Sales & Profit Over Time
+
+Monthly trend lines for both sales and profit
+
+Segmented into above average vs below average months
+
+Annotated with average benchmarks (e.g., Avg. $14K sales/month)
+
+### 🗃️ Dataset Structure
+
 The database contains the following key tables:
 
 fact_sales: transactional sales data (order date, sales amount, quantity, customer/product references)
@@ -21,47 +49,56 @@ Views (reports): report_products, report_customers
 
 Metadata accessed via INFORMATION_SCHEMA for structure exploration
 
-❓ Key Business Questions Answered
-📅 Trend & Time-Based Analysis
+### Key Business Questions Answered
+
+**📅 Trend & Time-Based Analysis**
+
 How has sales performance evolved year-over-year?
 
 What seasonal patterns exist in monthly sales?
 
 How is cumulative revenue growing over time?
 
-📈 Product & Category Analysis
+**📈 Product & Category Analysis**
+
 Which products perform the best or worst in revenue and sales volume?
 
 How does each category contribute to total sales?
 
 What is the average cost across categories?
 
-👥 Customer Insights
+**👥 Customer Insights**
+
 Who are our VIP, Regular, or New customers?
 
 How do customers' purchase patterns differ across age groups or countries?
 
 What are the recency, frequency, and monetary (RFM) behaviors?
 
-📦 Inventory & Sales Distribution
+**📦 Inventory & Sales Distribution**
+
 What is the distribution of products by cost range?
 
 How are products selling across different countries?
 
-🔢 Magnitude & Performance Metrics
+**🔢 Magnitude & Performance Metrics**
+
 What are the total sales, quantity, and number of orders?
 
 What is the average selling price?
 
 How many unique products and customers do we have?
 
-🏆 Ranking Analysis
+**🏆 Ranking Analysis**
+
 What are the top 5 and bottom 5 products in terms of revenue and quantity sold?
 
 
 
-📑 Summary Reports
-📌 report_products
+### Summary Reports
+
+**report_products**
+   
 A structured view of product-level KPIs.
 
 Purpose: Summarize product behavior and segment performance
@@ -82,7 +119,8 @@ Segmentation:
 
 Revenue-based performance: High-Performer, Mid-Range, Low-Performer
 
-📌 report_customers
+**report_customers**
+
 A comprehensive customer view for behavioral and demographic segmentation.
 
 Purpose: Profile customer engagement and spending
@@ -102,7 +140,7 @@ Age groups: Under 20, 20-29, 30-39, etc.
 
 
 
-🛠️ Tools & Skills Used
+**🛠️ Tools & Skills Used**
 SQL (MySQL dialect)
 
 Aggregation & Filtering
