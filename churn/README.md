@@ -1,4 +1,4 @@
-📊 **Churn Analysis Using SQL**
+# Churn Analysis Using SQL
 
 This project explores a customer churn dataset using pure SQL. The analysis focuses on understanding customer behavior, billing patterns, service usage, and factors influencing churn. The data was explored, cleaned, enriched with engineered features, and analyzed across several business dimensions.
 
