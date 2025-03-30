@@ -9,7 +9,7 @@ The analysis touches upon various areas including trend analysis, segmentation, 
 
 Explore the interactive Tableau dashboard built on top of SQL views and queries designed in this project:
 
-👉 [View Live Dashboard](https://public.tableau.com/app/profile/kianaseraj/viz/first_dashboard_17419718005270/SalesDashboard)
+👉 [View Live Dashboard](https://public.tableau.com/app/profile/kianaseraj/viz/SalesDashboard_17433614085850/SalesDashboard))
 
 The Dashboard includes :
 
