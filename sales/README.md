@@ -1,4 +1,4 @@
-# Sales Analysis Using MySQL
+# Sales Analysis Using SQL
 
 ### Overview
 
