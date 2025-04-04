@@ -1,4 +1,4 @@
-use ChurnAnalytics;
+USE ChurnAnalytics;
 
 SELECT * FROM churn_data;
 
