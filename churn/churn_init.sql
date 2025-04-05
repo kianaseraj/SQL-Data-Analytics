@@ -28,7 +28,7 @@ TotalCharges FLOAT,
 Churn VARCHAR(10)
 );
 
-LOAD DATA LOCAL INFILE '/Users/kianaseraj/desktop/baraa/data/Telco_Customer_Churn.csv'
+LOAD DATA LOCAL INFILE '/PATH/to/Telco_Customer_Churn.csv'
 INTO TABLE ChurnAnalytics.churn_data
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
