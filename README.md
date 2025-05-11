@@ -7,4 +7,4 @@ This repository contains SQL-based analytics projects focused on real-world busi
 - [Sales Analysis](./sales)  
 - [Churn Analysis](./churn)  
 
-> *Actively maintained — more SQL projects will be added soon.*
+
